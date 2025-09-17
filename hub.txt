@@ -1,0 +1,98 @@
+hub VVulATACSeqHub
+shortLabel Fox ATAC
+longLabel ATAC-seq signal track from Vulpes vulpes
+useOneFile on
+email jlk337@cornell.edu
+
+genome GCF_048418805.1
+
+track ATACseq
+type bigWig
+shortLabel ATAC-seq
+longLabel ATAC_seq signal tracks
+visibility full
+container multiWig
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+maxHeightPixels 100:40:8
+priority 1
+
+	track Agg_3
+	parent ATACseq
+	bigDataUrl bigWigs/Agg_3.bw
+	shortLabel Agg 3
+	longLabel Aggressive 3
+	type bigWig
+	color 200,0,0
+
+	track Agg_5
+	parent ATACseq
+	bigDataUrl bigWigs/Agg_5.bw
+	shortLabel Agg 5
+	longLabel Aggressive 5
+	type bigWig
+	color 200,0,0
+
+	track Conv_14
+	parent ATACseq
+	bigDataUrl bigWigs/Conv_14.bw
+	shortLabel Conv 14
+	longLabel Conventional 14
+	type bigWig
+	color 0,200,0
+
+	track Conv_15
+	parent ATACseq
+	bigDataUrl bigWigs/Conv_15.bw
+	shortLabel Conv 15
+	longLabel Conventional 15
+	type bigWig
+	color 0,200,0
+
+	track Conv_17
+	parent ATACseq
+	bigDataUrl bigWigs/Conv_17.bw
+	shortLabel Conv 17
+	longLabel Conventional 17
+	type bigWig
+	color 0,200,0
+
+	track Conv_18
+	parent ATACseq
+	bigDataUrl bigWigs/Conv_18.bw
+	shortLabel Conv 18
+	longLabel Conventional 18
+	type bigWig
+	color 0,200,0
+
+	track Tame_25
+	parent ATACseq
+	bigDataUrl bigWigs/Tame_25.bw
+	shortLabel Tame 25
+	longLabel Tame 25
+	type bigWig
+	color 0,0,200
+
+	track Tame_26
+	parent ATACseq
+	bigDataUrl bigWigs/Tame_26.bw
+	shortLabel Tame 26
+	longLabel Tame 26
+	type bigWig
+	color 0,0,200
+
+	track Tame_28
+	parent ATACseq
+	bigDataUrl bigWigs/Tame_28.bw
+	shortLabel Tame 28
+	longLabel Tame 28
+	type bigWig
+	color 0,0,200
+
+	track Tame_29
+	parent ATACseq
+	bigDataUrl bigWigs/Tame_29.bw
+	shortLabel Tame 29
+	longLabel Tame 29
+	type bigWig
+	color 0,0,200
