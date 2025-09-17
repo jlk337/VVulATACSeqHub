@@ -12,9 +12,10 @@ shortLabel ATAC-seq
 longLabel ATAC_seq signal tracks
 visibility full
 container multiWig
-aggregate transparentOverlay
+noOverlap on
+autoScale on
 showSubtrackColorOnUi on
-maxHeightPixels 100:40:8
+maxHeightPixels 20:20:20
 priority 1
 
 	track Agg_3
