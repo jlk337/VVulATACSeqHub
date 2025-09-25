@@ -120,3 +120,24 @@ longLabel Bound TF sites in Conventional condition (TOBIAS BINDetect)
 type bigBed 9
 itemRgb on
 visibility pack
+
+track Agg_Tn5_Corrected
+bigDataUrl bigWigs/Agg_merged_corrected.bw
+shortLabel Agg corrected
+longLabel Aggressive Tn5 Corrected
+type bigWig
+color 200,0,0
+
+track Conv_Tn5_Corrected
+bigDataUrl bigWigs/Conv_merged_corrected.bw
+shortLabel Conv corrected
+longLabel Conventional Tn5 Corrected
+type bigWig
+color 0,200,0
+
+track Tame_Tn5_Corrected
+bigDataUrl bigWigs/Tame_merged_corrected.bw
+shortLabel Tame corrected
+longLabel Tame Tn5 Corrected
+type bigWig
+color 0,0,200
