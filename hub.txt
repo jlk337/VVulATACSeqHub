@@ -96,3 +96,27 @@ priority 1
 	longLabel Tame 29
 	type bigWig
 	color 0,0,200
+
+track Agg_TFs_bound
+bigDataUrl bigBeds/agg_TFs_bound.bb
+shortLabel Agg TF footprints
+longLabel Bound TF sites in Aggressive condition (TOBIAS BINDetect)
+type bigBed 9
+itemRgb on
+visibility pack
+
+track Tame_TFs_bound
+bigDataUrl bigBeds/tame_TFs_bound.bb
+shortLabel Tame TF footprints
+longLabel Bound TF sites in Tame condition (TOBIAS BINDetect)
+type bigBed 9
+itemRgb on
+visibility pack
+
+track Conv_TFs_bound
+bigDataUrl bigBeds/conv_TFs_bound.bb
+shortLabel Conv TF footprints
+longLabel Bound TF sites in Conventional condition (TOBIAS BINDetect)
+type bigBed 9
+itemRgb on
+visibility pack
