@@ -12,9 +12,11 @@ shortLabel ATAC-seq
 longLabel ATAC_seq signal tracks
 visibility full
 container multiWig
-aggregate transparentOverlay
+aggregate none
 showSubtrackColorOnUi on
-maxHeightPixels 100:40:8
+maxHeightPixels 20:20:8
+autoScale group
+windowingFunction mean
 priority 1
 
 	track Agg_3
@@ -103,9 +105,13 @@ shortLabel ATACorrected
 longLabel Tn5 bias-corrected ATAC-seq signal
 visibility full
 container multiWig
-aggregate transparentOverlay
+aggregate none
 showSubtrackColorOnUi on
-maxHeightPixels 100:40:8
+maxHeightPixels 30:30:8
+autoScale group
+windowingFunction mean
+smoothingWindow 16
+viewLimits 0:100
 priority 2
 
     track Agg_corrected
@@ -138,7 +144,7 @@ shortLabel Agg TF footprints
 longLabel Bound TF sites in Aggressive condition (TOBIAS BINDetect)
 type bigBed 9
 itemRgb on
-visibility pack
+visibility dense
 
 track Tame_diff_TFs_bound
 bigDataUrl bigBeds/tame_diff_TFs_bound.bb
@@ -146,7 +152,7 @@ shortLabel Tame TF footprints
 longLabel Bound TF sites in Tame condition (TOBIAS BINDetect)
 type bigBed 9
 itemRgb on
-visibility pack
+visibility dense
 
 track Conv_diff_TFs_bound
 bigDataUrl bigBeds/conv_diff_TFs_bound.bb
@@ -154,4 +160,4 @@ shortLabel Conv TF footprints
 longLabel Bound TF sites in Conventional condition (TOBIAS BINDetect)
 type bigBed 9
 itemRgb on
-visibility pack
+visibility dense
