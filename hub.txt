@@ -143,7 +143,7 @@ bigDataUrl bigBeds/agg_diff_TFs_bound.bb
 shortLabel Agg TF footprints
 longLabel Bound TF sites in Aggressive condition (TOBIAS BINDetect)
 type bigBed 9
-itemRgb on
+itemRgb off
 visibility dense
 
 track Tame_diff_TFs_bound
@@ -151,7 +151,7 @@ bigDataUrl bigBeds/tame_diff_TFs_bound.bb
 shortLabel Tame TF footprints
 longLabel Bound TF sites in Tame condition (TOBIAS BINDetect)
 type bigBed 9
-itemRgb on
+itemRgb off
 visibility dense
 
 track Conv_diff_TFs_bound
@@ -159,5 +159,5 @@ bigDataUrl bigBeds/conv_diff_TFs_bound.bb
 shortLabel Conv TF footprints
 longLabel Bound TF sites in Conventional condition (TOBIAS BINDetect)
 type bigBed 9
-itemRgb on
+itemRgb off
 visibility dense
