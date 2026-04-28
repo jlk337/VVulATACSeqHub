@@ -109,7 +109,7 @@ visibility dense
 
 track Conventional_Peaks
 bigDataUrl bigBeds/conv_consensus.genrich.bb
-shortLabel Cone Peaks
+shortLabel Conv Peaks
 longLabel Conventional consensus peaks (Genrich)
 type bigBed 6
 itemRgb off
