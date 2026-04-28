@@ -99,10 +99,10 @@ priority 1
 	type bigWig
 	color 0,0,200
 
-track ATACorrected
+track Footprints
 type bigWig
-shortLabel ATACorrected
-longLabel Tn5 bias-corrected ATAC-seq signal
+shortLabel Footprints
+longLabel Transcription factor binding site footprints
 visibility full
 container multiWig
 aggregate none
@@ -114,50 +114,50 @@ smoothingWindow 16
 viewLimits 0:100
 priority 2
 
-    track Agg_corrected
-    parent ATACorrected
-    bigDataUrl bigWigs/Agg_merged_corrected.bw
-    shortLabel Agg corrected
-    longLabel Aggressive sample, Tn5-corrected ATAC
+    track Aggressive
+    parent Footprints
+    bigDataUrl bigWigs/agg_footprints.bw
+    shortLabel Agg
+    longLabel Aggressive footprints
     type bigWig
     color 200,0,0
 
-    track Tame_corrected
-    parent ATACorrected
-    bigDataUrl bigWigs/Tame_merged_corrected.bw
-    shortLabel Tame corrected
-    longLabel Tame sample, Tn5-corrected ATAC
+    track Conventional
+    parent Footprints
+    bigDataUrl bigWigs/conv_footprints.bw
+    shortLabel Cone
+    longLabel Conventional footprints
     type bigWig
     color 0,0,200
 
-    track Conv_corrected
-    parent ATACorrected
-    bigDataUrl bigWigs/Conv_merged_corrected.bw
-    shortLabel Conv corrected
-    longLabel Conventional sample, Tn5-corrected ATAC
+    track Tame
+    parent Footprints
+    bigDataUrl bigWigs/tame_footprints.bw
+    shortLabel Tame
+    longLabel Tame footprints
     type bigWig
     color 0,200,0
 
-track Agg_diff_TFs_bound
-bigDataUrl bigBeds/agg_diff_TFs_bound.bb
-shortLabel Agg TF footprints
-longLabel Bound TF sites in Aggressive condition (TOBIAS BINDetect)
-type bigBed 9
+track Aggressive_Peaks
+bigDataUrl bigBeds/agg_consensus.genrich.bb
+shortLabel Agg Peaks
+longLabel Aggressive consensus peaks (Genrich)
+type bigBed 6
 itemRgb off
 visibility dense
 
-track Tame_diff_TFs_bound
-bigDataUrl bigBeds/tame_diff_TFs_bound.bb
-shortLabel Tame TF footprints
-longLabel Bound TF sites in Tame condition (TOBIAS BINDetect)
-type bigBed 9
+track Conventional_Peaks
+bigDataUrl bigBeds/conv_consensus.genrich.bb
+shortLabel Cone Peaks
+longLabel Conventional consensus peaks (Genrich)
+type bigBed 6
 itemRgb off
 visibility dense
 
-track Conv_diff_TFs_bound
-bigDataUrl bigBeds/conv_diff_TFs_bound.bb
-shortLabel Conv TF footprints
-longLabel Bound TF sites in Conventional condition (TOBIAS BINDetect)
-type bigBed 9
+track Tame_Peaks
+bigDataUrl bigBeds/tame_consensus.genrich.bb
+shortLabel Tame Peaks
+longLabel Tame consensus peaks (Genrich)
+type bigBed 6
 itemRgb off
 visibility dense
